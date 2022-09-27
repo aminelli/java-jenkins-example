@@ -1,0 +1,9 @@
+
+.metadata/.lock
+/.metadata
+/com.corso.jenkins/.settings
+/com.corso.jenkins/target
+/com.corso.jenkins/.classpath
+/com.corso.jenkins/.project
+RemoteSystemsTempFiles/.project
+RemoteSystemsTempFiles/.settings/org.eclipse.core.resources.prefs
