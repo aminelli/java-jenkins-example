@@ -42,7 +42,7 @@ public class AppTest {
 		}
 		
 		@Test
-		@DisplayName("Play per number = 00")
+		@DisplayName("Play per number = 0")
 		public void testNumber4() {
 			Assertions.assertThrows(
 				IllegalArgumentException.class, 
