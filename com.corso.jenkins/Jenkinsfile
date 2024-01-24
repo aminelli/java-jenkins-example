@@ -18,7 +18,14 @@ pipeline {
 				withMaven(maven: 'maven_3_8_6') {
 					sh 'mvn -f com.corso.jenkins/pom.xml test'
 				}
-			}			
+			}		
+
+			post {
+                success {
+                    junit '**/com.corso.jenkins/target/surefire-reports/TEST-*.xml'
+                    // archiveArtifacts 'target/*.jar'
+                }
+            }		
 		}
 		
 		//stage('Deployment Stage') {
